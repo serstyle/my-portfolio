@@ -1,0 +1,228 @@
+body{
+	margin: 0;
+	font-size: 1.35rem;
+}
+
+
+/*#main{
+	display: flex;
+	flex-direction: row;
+}
+*/
+
+button{
+	border: none;
+	background: white;
+	font-size: 1em;
+	font-family: 'Barlow';
+}
+
+button:hover{
+	cursor: pointer;
+	text-shadow: 0.5px 0.5px #000000;
+}
+
+html{
+   scroll-behavior: smooth;
+   font-family: 'Barlow', sans-serif;
+}
+
+
+.container{
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+h1{
+	text-align: center;
+	text-transform: uppercase;
+}
+
+h2, h3{
+	text-align: center
+}
+
+#home, #about, #skills, #projects, #contact, #hire{
+	padding: 0;
+  	background-size: cover;
+  	height: 100vh; 
+}
+
+.center{
+	margin: 0;
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+
+}
+
+.moveDown{
+	position: absolute;
+	bottom: 0%;
+	left:50%;
+	animation: bounce 4s ease infinite;
+}
+
+
+@keyframes bounce{
+     0% {bottom: 0%;}
+     10%   {bottom: 6%;}
+     20% {bottom:0%;}
+     27.5%{bottom: 4%;}
+     35% {bottom:0%;}
+     38.75% {bottom: 2.5%;}
+     42.5% {bottom: 0%;}
+     44% {bottom: 1%;}
+     45.5% {bottom: 0%;}
+     100% {bottom: 0%}
+}
+
+.moveDown:hover{
+	cursor: pointer
+
+}
+
+
+#about div{
+	padding: 0.83em
+}
+
+#skills div{
+	padding: 0.83em
+}
+
+#skills ul{
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#skills li{
+	display: flex;
+	padding: 1rem;
+    align-items: center;
+    flex-basis: 6rem;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    margin: 0.5rem;
+    transition: 250ms;
+}
+
+
+.card{
+	 box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	 transition: 0.3s;
+	 width: 200px;
+	 margin: 1rem;
+	 border-radius: 10px;
+	 padding: 1rem;
+}
+
+.card h3{
+	height: 200px;
+	padding: 15%;
+	text-align: center;
+	background: white;
+	color: black;
+	margin:0;
+}
+
+
+
+ #projects .container{
+ 	flex-wrap: nowrap;
+ }
+
+
+.card-hire{
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	width: 20vh;
+	border-radius: 10px;
+	padding: 1rem;
+	margin: 1rem;
+    align-items: center;
+    flex-basis: 240px;
+}
+
+.card-hire{
+	height: 16rem;
+}
+#center-hire{
+	padding-top: 10%
+}
+
+@media only screen and (max-width: 700px) {
+  body {
+    font-size: 1.3rem;
+  }
+  .moveDown{
+  	left:45%;
+  }
+  
+  #skills ul{
+  	padding: 0rem;
+  }
+  #skills li{
+  	flex-basis: 0px;
+  }
+ #projects .container{
+ 	flex-wrap: wrap;
+ }
+  .card h3{
+  	height: auto;
+  }
+  .card-hire{
+  	flex-basis: auto ;
+  	height: auto ;
+  	margin:0.3rem;
+  	border: none;
+  }
+}
+
+@media only screen and (max-width: 600px){
+	.center{
+  	position: absolute;
+  	left:20%;
+  	transform: translate(-15%, -50%);
+  }
+  #home .center{
+  	position: absolute;
+  	left:20%;
+  	transform: translate(-6%, -50%);
+  }
+  #contact .center{
+  	margin: 0;
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  }
+    body {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 400px){
+	#home .center{
+  	position: absolute;
+  	left:20%;
+  	transform: translate(-15%, -50%);
+  }
+}
+
+.topnav {
+  overflow: hidden;
+  position: fixed;
+  z-index: 1;
+  display: flex;
+}
+
+@media only screen and (max-height: 600px){
+	body{
+		font-size: 0.9rem;
+	}
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" type="text/css" href="./app.css">
+	<link rel="stylesheet" type="text/css" href="./onepage-scroll.css">
+	<script type="text/javascript" src='./onepagescroll.js'></script>
+	
+	<link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
+
+	<title>Francois Desobry</title>
+</head>
+<body>
+	<header id='nav'>
+			<div class="topnav" id="myTopnav">
+				  <button onclick='moveTo(".main", 1)'>Home</button>
+				  <button onclick='moveTo(".main", 2)'>About</button>
+				  <button onclick='moveTo(".main", 3)'>Skills</button>
+				  <button onclick='moveTo(".main", 4)'>Projects</button>
+				  <button onclick='moveTo(".main", 5)'>Hire me</button>
+				  <button onclick='moveTo(".main", 6)'>Contact</button>
+				</div>
+		</header>
+	
+	<div class='main'>
+		<div id='app'>
+			<section id='home' >
+				<div class='center'><h1>Francois Desobry</h1>
+					<h2>Web Developer Fullstack</h2>
+					<h3>React Nodejs Express PostgreSQL</h3>
+				</div>
+				<img src='down_arrow.png' alt='Arrow to move down' class='moveDown' onclick='moveDown(".main")'> click</img>
+			</section>
+			<section id='about'>
+				<div class='center'>
+					<h1>About me</h1>
+					<p>Lorem ipsum dolor sit amet, nec ne aliquid eleifend. Ei alia utamur usu. Eum ei vivendo deserunt, quo homero omnesque oporteat et. Dicant menandri cu sea, quo nostrud comprehensam ut, an ferri prodesset mei. Vel voluptaria intellegebat comprehensam ea.
+
+					Sed ex dicit eirmod reprimique, vel et dicit gloriatur comprehensam, cum ut enim legendos. Te est lucilius convenire intellegam, et ius putant abhorreant, cu homero nominati assueverit eum. Vis eu illum periculis. Eam eu wisi ubique eruditi, sea epicuri maluisset et, vel definiebas suscipiantur et. Alia duis recteque cu ius, eos alterum ocurreret ad, diam rationibus vix cu. Pri id eius primis conceptam, vix nihil decore et. In tamquam rationibus signiferumque usu.
+					</p>
+				</div>
+			</section>
+			<section id='skills'>
+				<div class='center'>
+					<h1>My skills</h1>
+					<ul>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>Javascript</li>
+						<li>Reactjs</li>
+						<li>Nodejs</li>
+						<li>Express</li>
+						<li>PostgresSQL</li>
+						<li>SQL</li>
+						<li>Bcrypt</li>
+						<li>API's</li>
+					</ul>
+				</div>
+			</section>
+			<section id='projects'>
+				<div class='center'>
+					<h1>My projects</h1>
+					<div class='container'>
+						<div class='card'>
+							<h3>Weather App</h3>
+							<hr>
+							<p>A weather api connect to my site with a CRUD </p>
+						</div>
+						<div class='card'>
+							<h3>Face Recognize</h3>
+							<hr>
+							<p>I used a clarifai api to detect face on your photo with a point counter </p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id='hire'>
+				<div id='center-hire'>
+					<h1>What can I give you.</h1>
+					<div class="container"> 
+						<div class='card-hire'>
+							<h3>Passionate</h3>
+							<hr>
+							<p>Since my childhood, my dream job is to work with code. Work with passion make the greatest work. </p>
+						</div>
+						<div class='card-hire'>
+							<h3>Learner</h3>
+							<hr>
+							<p>When I learn, I really focus on the most important stuff first, to be useful. 20% of what you learn is 80% of what you need. </p>
+						</div>
+						<div class='card-hire'>
+							<h3>Adaptation</h3>
+							<hr>
+							<p> I really like to learn new technologies so I would like to learn the stack you need. </p>
+						</div>
+						<div class='card-hire'>
+							<h3>Work Hard</h3>
+							<hr>
+							<p>To achieve my work, I really focus on it and do my best to have the result that I want. </p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id='contact'>
+				<div class='center'>
+					<h1>Don't be shy </h1>
+				<div class='container'>
+					
+					<button>Email</button>
+					<button>Github</button>
+					<button>Resume</button>
+				</div>
+				</div>
+			</section>
+		</div>
+	</div>	
+
+
+<script type="text/javascript" src='./onepagescroll.js'></script>
+<script>
+	 onePageScroll(".main", {
+     sectionContainer: "section",
+     loop: true,
+     responsiveFallback: false
+   });
+		
+</script>
+
+</body>
+</html>
