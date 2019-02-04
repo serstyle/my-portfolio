@@ -47,11 +47,23 @@ h1{
 h2, h3{
 	text-align: center
 }
+	
+	@supports (-webkit-appearance:none) {
+    .os-android & #home, #about, #skills, #projects, #contact, #hire{
+      min-height: calc(100vh - 56px);
+      }}
+
+
+
+
 
 #home, #about, #skills, #projects, #contact, #hire{
 	padding: 0;
   	background-size: cover;
-  	height: 100vh; 
+  	height: 100vh;
+  	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover; 
 }
 
 .center{
