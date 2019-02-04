@@ -230,12 +230,15 @@ img{
   	transform: translate(-50%, -50%);
   }
     body {
-    -webkit-text-size-adjust: none;
-    font-size: 1rem;
+    font-size: 16px;
   }
 
 
-
+@media screen and (max-device-width: 480px){
+  body{
+    -webkit-text-size-adjust: none;
+  }
+}
 
 
 
