@@ -1,6 +1,7 @@
 body{
 	margin: 0;
 	font-size: 1.35rem;
+  -webkit-text-size-adjust: none;
 }
 
 a{
