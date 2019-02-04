@@ -241,11 +241,11 @@ img{
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution:.001dpcm) and (max-width: 600px){
-	  #home, #about, #skills, #projects, #contact, #hire{
-	padding: 0;
-  	background-size: cover;
-  	min-height: calc(100vh - 56px);
-  }
+	.chrome #home, .chrome #about, .chrome #skills, .chrome #projects, .chrome #contact, .chrome #hire{
+		padding: 0;
+	  	background-size: cover;
+	  	min-height: calc(100vh - 56px);
+  	}
 } 
 
 @media only screen and (max-width: 400px){
