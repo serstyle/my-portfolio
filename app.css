@@ -230,6 +230,7 @@ img{
   	transform: translate(-50%, -50%);
   }
     body {
+    -webkit-text-size-adjust: none;
     font-size: 1rem;
   }
 
