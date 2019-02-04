@@ -208,10 +208,6 @@ img{
   	height: auto ;
   	margin:0.3rem;
   	border: none;
-    width: 13vh;
-  }
-    .card{
-    width:13vh;
   }
 }
 
@@ -234,7 +230,7 @@ img{
   	transform: translate(-50%, -50%);
   }
     body {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
 
