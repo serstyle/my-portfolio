@@ -3,6 +3,9 @@ body{
 	font-size: 1.35rem;
 }
 
+a{
+	text-decoration: none;
+}
 
 /*#main{
 	display: flex;
