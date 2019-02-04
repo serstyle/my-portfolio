@@ -240,7 +240,7 @@ img{
 
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio:0) and (max-width: 600px){
+@media screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution:.001dpcm) and (max-width: 600px){
 	  #home, #about, #skills, #projects, #contact, #hire{
 	padding: 0;
   	background-size: cover;
