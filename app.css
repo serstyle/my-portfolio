@@ -237,7 +237,7 @@ img{
   #home, #about, #skills, #projects, #contact, #hire{
 	padding: 0;
   	background-size: cover;
-  	height: (100vh - 56px);
+  	min-height: calc(100vh - 56px);
   }
 
 
