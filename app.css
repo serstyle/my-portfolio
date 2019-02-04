@@ -210,11 +210,8 @@ img{
   	margin:0.3rem;
   	border: none;
   }
-  #about, p{
-    font-size: 1rem;
-  }
-  button{
-    font-size: 14px;
+  #home{
+    font-size: 16px;
   }
 }
 
