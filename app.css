@@ -234,15 +234,19 @@ img{
   }
 
 
-  #home, #about, #skills, #projects, #contact, #hire{
-	padding: 0;
-  	background-size: cover;
-  	min-height: calc(100vh - 56px);
-  }
+
 
 
 
 }
+
+@media only screen and (-webkit-min-device-pixel-ratio:0) and (max-width: 600px){
+	  #home, #about, #skills, #projects, #contact, #hire{
+	padding: 0;
+  	background-size: cover;
+  	min-height: calc(100vh - 56px);
+  }
+} 
 
 @media only screen and (max-width: 400px){
 	#home .center{
