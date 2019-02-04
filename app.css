@@ -48,13 +48,13 @@ h2, h3{
 	text-align: center
 }
 	
-	@supports (-webkit-appearance:none) {
+/*	@supports (-webkit-appearance:none) {
     .os-android & #home, #about, #skills, #projects, #contact, #hire{
       min-height: calc(100vh - 56px);
       }}
 
 
-
+*/
 
 
 #home, #about, #skills, #projects, #contact, #hire{
@@ -232,6 +232,16 @@ img{
     body {
     font-size: 1rem;
   }
+
+
+  #home, #about, #skills, #projects, #contact, #hire{
+	padding: 0;
+  	background-size: cover;
+  	height: (100vh - 56px);
+  }
+
+
+
 }
 
 @media only screen and (max-width: 400px){
