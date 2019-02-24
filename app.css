@@ -250,10 +250,10 @@ img{
   	transform: translate(-50%, -50%);
   }
     body {
-    font-size: 10px;
+    font-size: 12px;
   }
   #about{
-    font-size: 4vw;
+    font-size: 3vw;
   }
 
 @media screen and (max-device-width: 480px){
@@ -261,7 +261,7 @@ img{
     -webkit-text-size-adjust: none;
   }
   #about{
-    font-size: 5vw;
+    font-size: 4vw;
   }
 }
 
