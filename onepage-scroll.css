@@ -52,6 +52,11 @@ body, .onepage-wrapper, html {
   margin-right: 60px;
 }
 
+@media only screen and (max-width: 700px) {
+  .onepage-pagination {
+    display: none;
+  }
+}
 
 /*MAKE THE DOT COMME TRUE */
 
