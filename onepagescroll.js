@@ -54,7 +54,7 @@ function onePageScroll(element, options) {
   	  topPos = topPos + 100;
     
   	  if(settings.pagination == true) {
-  			paginationList += "<li><a data-index='" + (i + 1) + "' href='#" + (i + 1) + "'></a></li>";
+  			paginationList += "<li><a class='paginationList' data-index='" + (i + 1) + "' href='#" + (i + 1) + "'></a></li>";
   		}
     }
     

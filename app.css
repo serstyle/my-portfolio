@@ -1,6 +1,6 @@
 body{
 	margin: 0;
-	font-size: 1.35rem;
+	font-size: 1.30rem;
   -webkit-text-size-adjust: none;
 }
 
@@ -8,13 +8,29 @@ a{
 	text-decoration: none;
 }
 
-/*#main{
-	display: flex;
-	flex-direction: row;
-}
-*/
 
-button{
+.paginationList{
+  text-align: right;
+  text-transform: uppercase;
+  display: block;
+  transition: transform 250ms ease-In-Out;
+}
+li .paginationList.active{
+  transform: scale(1.5);
+  font-weight: bold;
+}
+
+a.paginationList:visited{
+   color: black;
+}
+
+li .paginationList:not(.active):hover{
+  font-weight: bold;
+}
+
+
+/* THIS IS THE TOP NAV */
+/*button{
 	border: none;
 	background: white;
 	font-size: 1em;
@@ -24,18 +40,20 @@ button{
 button:hover{
 	cursor: pointer;
 	text-shadow: 0.5px 0.5px #000000;
-}
+}*/
 
 html{
    scroll-behavior: smooth;
-   font-family: 'Barlow', sans-serif;
+   font-family: 'Exo', sans-serif;
 }
 
 
 .container{
+  margin-right: 50px;
+  margin-left: 50px;
 	display: flex;
 	flex-wrap: wrap;
-    justify-content: center;
+  justify-content: center;
 }
 
 
@@ -99,9 +117,7 @@ h2, h3{
 	padding: 0.83em
 }
 
-#skills div{
-	padding: 0.83em
-}
+
 
 #skills ul{
 	display: flex;
@@ -176,7 +192,7 @@ img{
 	padding-right: 1rem;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 708px) {
   body {
     font-size: 1rem;
   }
@@ -211,7 +227,7 @@ img{
     font-size: 16px;
   }
   #about{
-    font-size: 4vw;
+    font-size: 3vw;
   }
 }
 
@@ -236,11 +252,16 @@ img{
     body {
     font-size: 12px;
   }
-
+  #about{
+    font-size: 4vw;
+  }
 
 @media screen and (max-device-width: 480px){
   body{
     -webkit-text-size-adjust: none;
+  }
+  #about{
+    font-size: 5vw;
   }
 }
 

@@ -30,26 +30,39 @@ body, .onepage-wrapper, html {
 }
 
 .onepage-pagination {
+  display: flex;
+  flex-direction: row-reverse;
+  transform: rotate(-90deg) scale(0.9) translateX(-10%);
   position: absolute;
-  right: 10px;
-  top: 50%;
+  right: -370px;
+  top: 40%;
   z-index: 5;
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.onepage-pagination li {
-  padding: 0;
-  text-align: center;
+
+@media only screen and (min-width: 1600px) {
+  .onepage-pagination {
+    right: -250px;
+  }
 }
-.onepage-pagination li a{
+
+.onepage-pagination li {
+  margin-right: 60px;
+}
+
+
+/*MAKE THE DOT COMME TRUE */
+
+/*.onepage-pagination li a{
   padding: 10px;
   width: 4px;
   height: 4px;
   display: block;
   
-}
-.onepage-pagination li a:before{
+}*/
+/*.onepage-pagination li a:before{
   content: '';
   position: absolute;
   width: 4px;
@@ -67,7 +80,7 @@ body, .onepage-wrapper, html {
   border: 1px solid black;
   margin-top: -4px;
   left: 8px;
-}
+}*/
 
 .disabled-onepage-scroll, .disabled-onepage-scroll .wrapper {
   overflow: auto;

@@ -6,12 +6,12 @@
 			<link rel="stylesheet" type="text/css" href="./app.css">
 			<link rel="stylesheet" type="text/css" href="./onepage-scroll.css">
 			<!-- Icons made by Freepik SimpleIcon Gregor Cresna from www.flaticon.com is licensed by CC 3.0 BY -->
-			<link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet"> <!-- it was barlow before -->
 
 			<title>Francois Desobry</title>
 		</head>
 		<body>
-			<header id='nav'>
+			<!-- <header id='nav'>
 					<div class="topnav" id="myTopnav">
 						<button onclick='moveTo(".main", 1)'>Home</button>
 						<button onclick='moveTo(".main", 2)'>About</button>
@@ -20,7 +20,7 @@
 						<button onclick='moveTo(".main", 5)'>Why me</button>
 						<button onclick='moveTo(".main", 6)'>Contact</button>
 					</div>
-				</header>
+				</header> -->
 			
 			<div class='main'>
 				<div id='app'>
@@ -51,6 +51,8 @@
 								<li>Nodejs</li>
 								<li>Express</li>
 								<li>PostgresSQL</li>
+								<li>PWA</li>
+								<li>Unit Test</li>
 								<li>SQL</li>
 								<li>Bcrypt</li>
 								<li>API</li>
@@ -128,6 +130,15 @@
 		</script>
 <script type="text/javascript"> var vh = window.innerHeight * 0.01
 document.documentElement.style.setProperty('--vh', `${vh}px`)
+</script>
+<script type="text/javascript">
+	const pagination = document.getElementsByClassName('paginationList')
+	pagination[0].innerHTML = 'Home'
+	pagination[1].innerHTML = 'About'
+	pagination[2].innerHTML	= 'Skills'
+	pagination[3].innerHTML = 'Projects'
+	pagination[4].innerHTML = 'Why me?'
+	pagination[5].innerHTML = 'Contact'
 </script>
 		</body>
 	</html>
