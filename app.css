@@ -250,7 +250,7 @@ img{
   	transform: translate(-50%, -50%);
   }
     body {
-    font-size: 12px;
+    font-size: 10px;
   }
   #about{
     font-size: 4vw;
@@ -294,8 +294,3 @@ img{
   display: flex;
 }
 
-@media only screen and (max-height: 600px){
-	body{
-		font-size: 12px;
-	}
-}
