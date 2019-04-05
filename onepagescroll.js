@@ -19,7 +19,7 @@ function onePageScroll(element, options) {
   var defaults = {
 	    	sectionContainer: "section",
 	    	easing: "ease",
-	    	animationTime: 1000,
+	    	animationTime: 750,
 	    	pagination: true,
 	    	updateURL: false,
 	    	keyboard: true,
@@ -468,7 +468,8 @@ function onePageScroll(element, options) {
 		    next = document.querySelector(settings.sectionContainer + "[data-index='" + (page_index) + "']");
 		    
 		if(next) {
-		  var next_index = next.dataset.index;
+			var next_index = next.dataset.index;
+			
 			_removeClass(current, "active");
 			_addClass(next, "active");
 			_removeClass(document.querySelector(".onepage-pagination li a" + ".active"), "active");
