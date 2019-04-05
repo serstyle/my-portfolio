@@ -127,10 +127,11 @@
     opacity: 0;
     transition: opacity 0.4s ease;
   }
-  
+  .menu-wrap .menu > div > div > ul{
+      padding: 0;
+  }
   .menu-wrap .menu > div > div > ul > li {
     list-style: none;
-    color: black;
     font-size: 1.5rem;
     padding: 1rem;
   }
@@ -140,6 +141,7 @@
     text-decoration: none;
     transition: color 0.4s ease;
     background: white;
+    color: black;
     cursor: pointer;
     font-size: 4vh;
     font-family: 'Exo', sans-serif;
