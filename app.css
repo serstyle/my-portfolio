@@ -235,7 +235,7 @@ img{
 
 @media only screen and (max-width: 600px){
   .container{margin:0;}
-	.center{
+	/* .center{
   	position: absolute;
   	left:20%;
   	transform: translate(-15%, -50%);
@@ -244,7 +244,7 @@ img{
   	position: absolute;
   	left:20%;
   	transform: translate(-6%, -50%);
-  }
+  } */
   #contact .center{
   	margin: 0;
   	position: absolute;
@@ -253,7 +253,7 @@ img{
   	transform: translate(-50%, -50%);
   }
     body {
-    font-size: 10px;
+    font-size: 14px;
   }
   #about{
     font-size: 3vw;
@@ -282,13 +282,13 @@ img{
   }
 } 
 
-@media only screen and (max-width: 400px){
+/* @media only screen and (max-width: 400px){
 	#home .center{
   	position: absolute;
   	left:20%;
   	transform: translate(-15%, -50%);
   }
-}
+} */
 
 .topnav {
   overflow: hidden;

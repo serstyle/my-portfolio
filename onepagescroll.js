@@ -461,7 +461,10 @@ function onePageScroll(element, options) {
   
   this.moveTo = function(el5, page_index) {
 		//UNCHECK THE CHECKBOX TO UNSHOW THE MENU
-    document.getElementById("myCheck").click()
+		var elm = document.getElementById("myCheck");
+		if (elm.checked) {
+			elm.click();
+	}
     if (typeof el5 == "string") el5 = document.querySelector(el5);
     
 		var current = document.querySelector(settings.sectionContainer + ".active"),
