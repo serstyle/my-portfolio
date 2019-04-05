@@ -235,16 +235,16 @@ img{
 
 @media only screen and (max-width: 600px){
   .container{margin:0;}
-	/* .center{
+	.center{
   	position: absolute;
   	left:20%;
   	transform: translate(-15%, -50%);
   }
   #home .center{
   	position: absolute;
-  	left:20%;
+  	left:18%;
   	transform: translate(-6%, -50%);
-  } */
+  }
   #contact .center{
   	margin: 0;
   	position: absolute;
@@ -282,13 +282,13 @@ img{
   }
 } 
 
-/* @media only screen and (max-width: 400px){
+@media only screen and (max-width: 400px){
 	#home .center{
   	position: absolute;
   	left:20%;
   	transform: translate(-15%, -50%);
   }
-} */
+}
 
 .topnav {
   overflow: hidden;
