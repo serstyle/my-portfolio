@@ -5,12 +5,31 @@
 			
 			<link rel="stylesheet" type="text/css" href="./app.css">
 			<link rel="stylesheet" type="text/css" href="./onepage-scroll.css">
+			<link rel="stylesheet" type="text/css" href="./menu.css">
 			<!-- Icons made by Freepik SimpleIcon Gregor Cresna from www.flaticon.com is licensed by CC 3.0 BY -->
 			<link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet"> <!-- it was barlow before -->
 
 			<title>Francois Desobry</title>
 		</head>
 		<body>
+			<div class="menu-wrap">
+				<input type="checkbox" id="myCheck" class="toggler">
+				<div class="hamburger"><div></div></div>
+				<div class="menu">
+					<div>
+						<div>
+							<ul>
+								<li><button onclick='moveTo(".main", 1)'>Home</button></li>
+								<li><button onclick='moveTo(".main", 2)'>About</button></li>
+								<li><button onclick='moveTo(".main", 3)'>Skills</button></li>
+								<li><button onclick='moveTo(".main", 4)'>Projects</button></li>
+								<li><button onclick='moveTo(".main", 5)'>Why Me</button></li>
+								<li><button onclick='moveTo(".main", 6)'>Contact</button></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
 			<!-- <header id='nav'>
 					<div class="topnav" id="myTopnav">
 						<button onclick='moveTo(".main", 1)'>Home</button>
@@ -123,22 +142,30 @@
 		<script>
 			 onePageScroll(".main", {
 		     sectionContainer: "section",
-		     loop: true,
+		     loop: false,
 		     responsiveFallback: false
 		   });
 				
 		</script>
-<script type="text/javascript"> var vh = window.innerHeight * 0.01
-document.documentElement.style.setProperty('--vh', `${vh}px`)
-</script>
-<script type="text/javascript">
-	const pagination = document.getElementsByClassName('paginationList')
-	pagination[0].innerHTML = 'Home'
-	pagination[1].innerHTML = 'About'
-	pagination[2].innerHTML	= 'Skills'
-	pagination[3].innerHTML = 'Projects'
-	pagination[4].innerHTML = 'Why me?'
-	pagination[5].innerHTML = 'Contact'
-</script>
+		<script type="text/javascript"> 
+		var vh = window.innerHeight * 0.01;
+		document.documentElement.style.setProperty('--vh', `${vh}px`);
+		</script>
+		<script type="text/javascript">
+			const pagination = document.getElementsByClassName('paginationList')
+			pagination[0].innerHTML = 'Home'
+			pagination[1].innerHTML = 'About'
+			pagination[2].innerHTML	= 'Skills'
+			pagination[3].innerHTML = 'Projects'
+			pagination[4].innerHTML = 'Why me?'
+			pagination[5].innerHTML = 'Contact'
+
+			function checked(checked) {
+			var elm = document.getElementsByClassName('toggler');
+			if (checked != elm.checked) {
+				elm.click();
+			}
+		}
+		</script>
 		</body>
 	</html>
