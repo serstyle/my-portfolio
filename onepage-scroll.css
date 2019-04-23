@@ -34,7 +34,7 @@ body, .onepage-wrapper, html {
   flex-direction: row-reverse;
   transform: rotate(-90deg) scale(0.9) translateX(-10%);
   position: absolute;
-  right: -370px;
+  right: -250px;
   top: 40%;
   z-index: 5;
   list-style: none;
@@ -42,11 +42,11 @@ body, .onepage-wrapper, html {
   padding: 0;
 }
 
-@media only screen and (min-width: 1600px) {
+/* @media only screen and (min-width: 1600px) {
   .onepage-pagination {
     right: -250px;
   }
-}
+} */
 
 .onepage-pagination li {
   margin-right: 60px;
@@ -58,34 +58,7 @@ body, .onepage-wrapper, html {
   }
 }
 
-/*MAKE THE DOT COMME TRUE */
 
-/*.onepage-pagination li a{
-  padding: 10px;
-  width: 4px;
-  height: 4px;
-  display: block;
-  
-}*/
-/*.onepage-pagination li a:before{
-  content: '';
-  position: absolute;
-  width: 4px;
-  height: 4px;
-  background: rgba(0,0,0,0.85);
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-}
-
-.onepage-pagination li a.active:before{
-  width: 10px;
-  height: 10px;
-  background: none;
-  border: 1px solid black;
-  margin-top: -4px;
-  left: 8px;
-}*/
 
 .disabled-onepage-scroll, .disabled-onepage-scroll .wrapper {
   overflow: auto;
