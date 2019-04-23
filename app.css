@@ -10,7 +10,7 @@ a{
 	color: black;
 }
 
-a:hover{
+#projects a:hover{
 	text-decoration: underline;
 }
 
@@ -171,6 +171,18 @@ h2, h3{
 }
 
 
+
+#projects{
+	display: flex;
+	justify-content: center;
+}
+#projects .center{
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: initial;
+	transform: translate(-0%, -50%);
+}
 
  #projects .container{
  	flex-wrap: wrap;
