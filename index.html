@@ -23,30 +23,19 @@
 								<li><button onclick='moveTo(".main", 2)'>About</button></li>
 								<li><button onclick='moveTo(".main", 3)'>Skills</button></li>
 								<li><button onclick='moveTo(".main", 4)'>Projects</button></li>
-								<li><button onclick='moveTo(".main", 5)'>Why Me</button></li>
-								<li><button onclick='moveTo(".main", 6)'>Contact</button></li>
+								<li><button onclick='moveTo(".main", 5)'>Contact</button></li>
 							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
-			<!-- <header id='nav'>
-					<div class="topnav" id="myTopnav">
-						<button onclick='moveTo(".main", 1)'>Home</button>
-						<button onclick='moveTo(".main", 2)'>About</button>
-						<button onclick='moveTo(".main", 3)'>Skills</button>
-						<button onclick='moveTo(".main", 4)'>Projects</button>
-						<button onclick='moveTo(".main", 5)'>Why me</button>
-						<button onclick='moveTo(".main", 6)'>Contact</button>
-					</div>
-				</header> -->
-			
 			<div class='main'>
 				<div id='app'>
 					<section id='home' >
-						<div class='center'><h1>Francois Desobry</h1>
-							<h2>Web Developer Fullstack</h2>
-							<h3>React Nodejs Express PostgreSQL</h3>
+						<div class='center'>
+							<h1>Francois Desobry</h1>
+							<h3>Web Developer Fullstack</h3>
+							<p>React Redux Nodejs Express PostgreSQL</p>
 						</div>
 						<img src='icons/down_arrow.png' alt='Arrow to move down' class='moveDown' onclick='moveDown(".main")'></img>
 					</section>
@@ -65,15 +54,17 @@
 							<ul>
 								<li>HTML</li>
 								<li>CSS</li>
-								<li>Javascript</li>
-								<li>Reactjs</li>
+								<li>ES6</li>
+								<li>React Js</li>
+								<li>Redux</li>
 								<li>Nodejs</li>
 								<li>Express</li>
 								<li>PostgresSQL</li>
+								<li>Redis</li>
+								<li>Jest</li>
+								<li>Performance</li>
 								<li>PWA</li>
-								<li>Unit Test</li>
-								<li>SQL</li>
-								<li>Bcrypt</li>
+								<li>JWT</li>
 								<li>API</li>
 							</ul>
 						</div>
@@ -83,21 +74,27 @@
 							<h1>My projects</h1>
 							<div class='container'>
 								<div class='card'>
-									<a href='#'><h3>Weather App</h3></a>
+									<a href='https://bookfriends.netlify.com/' target='_blank'><h3>Book Friends</h3></a>
 									<hr>
-									<p>A weather api connect to my site with authentication. React JS, Node JS, postgreSQL</p>
-									<a href="https://github.com/serstyle/weather-app"><img src="icons/github.png" alt='logo github'></a>
+									<p>A full stack web app with react & redux, node js, express, postgreSQL, redis, docker, and Google book api.</p>
+									<a href="https://github.com/serstyle/book_friend" target='_blank'>More about on<img src="icons/github.png" alt='logo github'></a>
 								</div>
 								<div class='card'>
-									<a href='#'><h3>Face Recognize</h3></a>
+									<a href='#' target='_blank'><h3>Weather App</h3></a>
 									<hr>
-									<p>I used a clarifai api to detect face on your photo with a point counter.  React JS, Node JS, postgreSQL and tachyons as css framework </p>
-									<a href="https://github.com/serstyle/face-recognize"><img src="icons/github.png" alt='logo github'></a>
+									<p>A weather api connect to my site with authentication. React JS, Node JS, postgreSQL</p>
+									<a href="https://github.com/serstyle/weather-app target='_blank'">More about on<img src="icons/github.png" alt='logo github'></a>
+								</div>
+								<div class='card'>
+									<a href='#' target='_blank'><h3>Face Recognize</h3></a>
+									<hr>
+									<p>Web app withclarifai api to detect face on your photo with a point counter.  React JS, Node JS, Express, postgreSQL. </p>
+									<a href="https://github.com/serstyle/face-recognize" target='_blank'>More about on<img src="icons/github.png" alt='logo github'></a>
 								</div>
 							</div>
 						</div>
 					</section>
-					<section id='hire'>
+					<!-- <section id='hire'>
 						<div id='center-hire'>
 							<h1>Why me ?</h1>
 							<div class="container"> 
@@ -123,13 +120,15 @@
 								</div>
 							</div>
 						</div>
-					</section>
+					</section> -->
 					<section id='contact'>
 						<div class='center'>
 							<h1>Don't be shy </h1>
 						<div class='container'>
 							<a href="https://github.com/serstyle/my-portfolio"><img src="icons/github.png" alt='logo github'></a>
 							<a href="https://www.linkedin.com/in/françois-desobry"><img src="icons/linkedin-logo.png" alt='logo linkedin'></a>
+						</div>
+						<div>
 							<button>Resume <img src="icons/download.png" alt='logo download'></button>
 						</div>
 						</div>
@@ -157,8 +156,7 @@
 			pagination[1].innerHTML = 'About'
 			pagination[2].innerHTML	= 'Skills'
 			pagination[3].innerHTML = 'Projects'
-			pagination[4].innerHTML = 'Why me?'
-			pagination[5].innerHTML = 'Contact'
+			pagination[4].innerHTML = 'Contact'
 
 			function checked(checked) {
 			var elm = document.getElementsByClassName('toggler');

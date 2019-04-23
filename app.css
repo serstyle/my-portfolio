@@ -10,6 +10,10 @@ a{
 	color: black;
 }
 
+a:hover{
+	text-decoration: underline;
+}
+
 
 .paginationList{
   text-align: right;
@@ -89,6 +93,11 @@ h2, h3{
 
 }
 
+#home .center p{
+	font-style: italic;
+	text-align: center;
+}
+
 .moveDown{
 	position: absolute;
 	bottom: 0%;
@@ -126,10 +135,12 @@ h2, h3{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	padding: 0;
 }
 
 #skills li{
 	display: flex;
+	justify-content: center;
 	font-weight: bold;
 	padding: 1rem;
 	align-items: center;
@@ -148,10 +159,10 @@ h2, h3{
 	 margin: 1rem;
 	 border-radius: 10px;
 	 padding: 1rem;
+	 font-size: 1rem;
 }
 
 .card h3{
-	height: 200px;
 	padding: 10px;
 	text-align: center;
 	background: white;
@@ -162,32 +173,31 @@ h2, h3{
 
 
  #projects .container{
- 	flex-wrap: nowrap;
+ 	flex-wrap: wrap;
  }
 
-
-.card-hire{
-	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-	width: 20vh;
-	border-radius: 10px;
-	padding: 1rem;
-	margin: 1rem;
-    align-items: center;
-    flex-basis: 240px;
+#projects img{
+	padding:0 1rem;
 }
 
-.card-hire{
-	height: 16rem;
+#contact h1{
+	margin:0px;
+	font-size: 1.5rem;
 }
-#center-hire{
-	padding-top: 10%
+
+#contact .container {
+	margin:10px;
 }
+
 #contact button{
-	list-style: initial;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
 	background: black;
 	color: white;
 	border-radius: 2px;
-	font-size: 1.5rem
+	font-size: 1.5rem;
+	margin:10px;
 }
 button img{
 	padding: 0
@@ -244,8 +254,8 @@ img{
   }
   #home .center{
   	position: absolute;
-  	left:18%;
-  	transform: translate(-6%, -50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   #contact .center{
   	margin: 0;
@@ -255,10 +265,20 @@ img{
   	transform: translate(-50%, -50%);
   }
     body {
-    font-size: 10px;
-  }
+    font-size: 12px;
+	}
+	.card p {
+		margin-bottom: 0;
+	}
+	.card img{
+		height: 20px;
+	}
+	.card{
+		font-size: 12px;
+		margin:0;
+	}
   #about{
-    font-size: 3vw;
+    font-size: 14px;
   }
 
 @media screen and (max-device-width: 480px){
