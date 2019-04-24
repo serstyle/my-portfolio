@@ -9,7 +9,7 @@ const closeBtn = document.querySelector('.close');
 const github1 = 'https://github.com/serstyle/book_friend'
 const description1 = 
 `
- <p>The website let users to create a secure account and search books into the Google books API to add it in their own book lists. There is a possibility to let reviews on each books.
+ <p>The website let users create a secure account and search books into the Google books API to add it in their own book lists. There is a possibility to let reviews on each books.
  The user can also follow others users and see their book lists and last reviews.</p>
  <p>For a test account you can take test@test as email and test as password but you can also create your own account.</p>
 `
@@ -17,7 +17,7 @@ const description1 =
 const github2 = 'https://github.com/serstyle/weather-app'
 const description2 = 
 `
-A simple web app which let users to search for the weather of a city. They can also create an account with the city of their 
+A simple web app which let users search for the weather of a city. They can also create an account with the city of their 
 choice and it would show the weather of this city.
 
 The front end is deploy on netlify and the back end on heroku.
