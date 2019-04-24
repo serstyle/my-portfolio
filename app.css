@@ -157,7 +157,14 @@ h2, h3{
 	color: black;
 	margin:0;
 }
+.card-description:hover{
+	cursor: pointer;
+}
 
+.card p:last-child{
+	font-weight: bold;
+	cursor: pointer;
+}
 
 
 #projects{

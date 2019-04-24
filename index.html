@@ -6,6 +6,7 @@
 			<link rel="stylesheet" type="text/css" href="./app.css">
 			<link rel="stylesheet" type="text/css" href="./onepage-scroll.css">
 			<link rel="stylesheet" type="text/css" href="./menu.css">
+			<link rel="stylesheet" type="text/css" href="./modal.css">
 			<!-- Icons made by Freepik SimpleIcon Gregor Cresna from www.flaticon.com is licensed by CC 3.0 BY -->
 			<link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet"> <!-- it was barlow before -->
 
@@ -59,7 +60,7 @@
 								<li>Redux</li>
 								<li>Nodejs</li>
 								<li>Express</li>
-								<li>PostgresSQL</li>
+								<li>PostgreSQL</li>
 								<li>Redis</li>
 								<li>Jest</li>
 								<li>Performance</li>
@@ -70,57 +71,45 @@
 						</div>
 					</section>
 					<section id='projects'>
+						<div id="my-modal" class="center modal">
+							<div class="modal-content">
+							  <div class="modal-header">
+								<span class="close">&times;</span>
+								<h2 class='modal-title'></h2>
+							  </div>
+							  <div class="modal-body">
+								<p class="modal-description"></p>
+							  </div>
+							  <div class="modal-footer">
+								  <p class='modal-live'></p>
+								  <p class='modal-github'></p>
+							  </div>
+							</div>
+						  </div>
 						<div class='center'>
 							<h1>My projects</h1>
 							<div class='container'>
-								<div class='card'>
+								<div id='card-project1' class='card'>
 									<a href='https://bookfriends.netlify.com/' target='_blank'><h3>Book Friends</h3></a>
 									<hr>
-									<p>A full stack web app with react & redux, node js, express, postgreSQL, redis, docker, and Google book api.</p>
-									<a href="https://github.com/serstyle/book_friend" target='_blank'>More about on<img src="icons/github.png" alt='logo github'></a>
+									<p class='card-description'>Web app using react & redux, node js, express, postgreSQL, redis, docker, and Google book api.</p>
+									<p>Click here to see more about</p>
 								</div>
-								<div class='card'>
+								<div id='card-project2' class='card'>
 									<a href='https://weather-app1337.netlify.com/' target='_blank'><h3>Weather App</h3></a>
 									<hr>
-									<p>A weather web app connect to an api with authentication. React JS, Jest, Enzyme, Node JS, postgreSQL.</p>
-									<a href="https://github.com/serstyle/weather-app" target='_blank'>More about on<img src="icons/github.png" alt='logo github'></a>
+									<p class='card-description'>Web app using React JS, Jest, Enzyme, Node JS, postgreSQL.</p>
+									<p>Click here to see more about</p>
 								</div>
-								<div class='card'>
+								<div id='card-project3' class='card'>
 									<a href='#' target='_blank'><h3>Face Recognize</h3></a>
 									<hr>
-									<p>Web app withclarifai api to detect face on your photo with a point counter.  React JS, Node JS, Express, postgreSQL. </p>
-									<a href="https://github.com/serstyle/face-recognize" target='_blank'>More about on<img src="icons/github.png" alt='logo github'></a>
+									<p class='card-description'>Web app using React JS, Node JS, Express, postgreSQL. </p>
+									<p>Click here to see more about</p>
 								</div>
 							</div>
 						</div>
 					</section>
-					<!-- <section id='hire'>
-						<div id='center-hire'>
-							<h1>Why me ?</h1>
-							<div class="container"> 
-								<div class='card-hire'>
-									<h3>Passionate</h3>
-									<hr>
-									<p>Since my childhood, my dream job is to work with code. Work with passion make the greatest work. </p>
-								</div>
-								<div class='card-hire'>
-									<h3>Learner</h3>
-									<hr>
-									<p>When I learn, I really focus on the most important stuff first, to be useful. 20% of what you learn is 80% of what you need. </p>
-								</div>
-								<div class='card-hire'>
-									<h3>Adaptation</h3>
-									<hr>
-									<p> I really like to learn new technologies so I would like to learn the stack you need. </p>
-								</div>
-								<div class='card-hire'>
-									<h3>Work Hard</h3>
-									<hr>
-									<p>To achieve my work, I really focus on it and do my best to have the result that I want. </p>
-								</div>
-							</div>
-						</div>
-					</section> -->
 					<section id='contact'>
 						<div class='center'>
 							<h1>Don't be shy </h1>
@@ -139,13 +128,14 @@
 
 		<script type="text/javascript" src='./onepagescroll.js'></script>
 		<script>
-			 onePageScroll(".main", {
-		     sectionContainer: "section",
-		     loop: false,
-		     responsiveFallback: false
-		   });
-				
-		</script>
+			onePageScroll(".main", {
+				sectionContainer: "section",
+				loop: false,
+				responsiveFallback: false,
+				keyboard: false,
+			});
+			
+			</script>
 		<script type="text/javascript"> 
 		var vh = window.innerHeight * 0.01;
 		document.documentElement.style.setProperty('--vh', `${vh}px`);
@@ -157,13 +147,14 @@
 			pagination[2].innerHTML	= 'Skills'
 			pagination[3].innerHTML = 'Projects'
 			pagination[4].innerHTML = 'Contact'
-
+			
 			function checked(checked) {
-			var elm = document.getElementsByClassName('toggler');
-			if (checked != elm.checked) {
-				elm.click();
+				var elm = document.getElementsByClassName('toggler');
+				if (checked != elm.checked) {
+					elm.click();
+				}
 			}
-		}
-		</script>
+			</script>
+			<script type="text/javascript" src='./script.js'></script>
 		</body>
 	</html>
