@@ -43,9 +43,18 @@
 					<section id='about'>
 						<div class='center'>
 							<h1>About me</h1>
-							<p>Lorem ipsum dolor sit amet, nec ne aliquid eleifend. Ei alia utamur usu. Eum ei vivendo deserunt, quo homero omnesque oporteat et. Dicant menandri cu sea, quo nostrud comprehensam ut, an ferri prodesset mei. Vel voluptaria intellegebat comprehensam ea.
+							<p>
+								Lorem ipsum dolor sit amet, nec ne aliquid eleifend. Ei alia utamur usu.
+								Eum ei vivendo deserunt, quo homero omnesque oporteat et. Dicant menandri 
+								cu sea, quo nostrud comprehensam ut, an ferri prodesset mei. Vel voluptaria 
+								intellegebat comprehensam ea.
 
-							Sed ex dicit eirmod reprimique, vel et dicit gloriatur comprehensam, cum ut enim legendos. Te est lucilius convenire intellegam, et ius putant abhorreant, cu homero nominati assueverit eum. Vis eu illum periculis. Eam eu wisi ubique eruditi, sea epicuri maluisset et, vel definiebas suscipiantur et. Alia duis recteque cu ius, eos alterum ocurreret ad, diam rationibus vix cu. Pri id eius primis conceptam, vix nihil decore et. In tamquam rationibus signiferumque usu.
+								Sed ex dicit eirmod reprimique, vel et dicit gloriatur comprehensam, 
+								cum ut enim legendos. Te est lucilius convenire intellegam, et ius putant abhorreant, 
+								cu homero nominati assueverit eum. Vis eu illum periculis. Eam eu wisi ubique eruditi, 
+								sea epicuri maluisset et, vel definiebas suscipiantur et. Alia duis recteque cu ius, eos alterum 
+								ocurreret ad, diam rationibus vix cu. Pri id eius primis conceptam, vix nihil decore et. In tamquam 
+								rationibus signiferumque usu.
 							</p>
 						</div>
 					</section>
@@ -92,19 +101,19 @@
 								<div id='card-project1' class='card'>
 									<a href='https://bookfriends.netlify.com/' target='_blank'><h3>Book Friends</h3></a>
 									<hr>
-									<p class='card-description'>Web app using react & redux, node js, express, postgreSQL, redis, docker, and Google book api.</p>
+									<p class='card-description'>Web app using React & Redux, Node js, Express, PostgreSQL, Redis, JWT, Docker, and Google book api.</p>
 									<p>Click here to see more about</p>
 								</div>
 								<div id='card-project2' class='card'>
 									<a href='https://weather-app1337.netlify.com/' target='_blank'><h3>Weather App</h3></a>
 									<hr>
-									<p class='card-description'>Web app using React JS, Jest, Enzyme, Node JS, postgreSQL.</p>
+									<p class='card-description'>Web app using React JS, Jest, Enzyme, Node JS, PostgreSQL.</p>
 									<p>Click here to see more about</p>
 								</div>
 								<div id='card-project3' class='card'>
 									<a href='#' target='_blank'><h3>Face Recognize</h3></a>
 									<hr>
-									<p class='card-description'>Web app using React JS, Node JS, Express, postgreSQL. </p>
+									<p class='card-description'>Web app using React JS, Node JS, Express, PostgreSQL. </p>
 									<p>Click here to see more about</p>
 								</div>
 							</div>
@@ -139,6 +148,10 @@
 		<script type="text/javascript"> 
 		var vh = window.innerHeight * 0.01;
 		document.documentElement.style.setProperty('--vh', `${vh}px`);
+		window.addEventListener('resize',function(){ //set new vh everytime the window resize 
+		var vh = window.innerHeight * 0.01;
+		document.documentElement.style.setProperty('--vh', `${vh}px`);
+		});
 		</script>
 		<script type="text/javascript">
 			const pagination = document.getElementsByClassName('paginationList')

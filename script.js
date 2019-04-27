@@ -6,6 +6,13 @@ const card3 = document.getElementById('card-project3')
 const modal = document.querySelector('#my-modal');
 const closeBtn = document.querySelector('.close');
 
+class Modal{ //no need of that it s just to make it more readable
+  constructor(github, description){
+    this.github = github;
+    this.description = description
+  }
+}
+
 const github1 = 'https://github.com/serstyle/book_friend'
 const description1 = 
 `
@@ -13,6 +20,9 @@ const description1 =
  The user can also follow others users and see their book lists and last reviews.</p>
  <p>For a test account you can take test@test as email and test as password but you can also create your own account.</p>
 `
+
+const book_friend = new Modal(github1, description1)
+
 
 const github2 = 'https://github.com/serstyle/weather-app'
 const description2 = 
@@ -23,16 +33,21 @@ choice and it would show the weather of this city.
 The front end is deploy on netlify and the back end on heroku.
 `
 
+const weather_app = new Modal(github2, description2)
+
 const github3 = "https://github.com/serstyle/face-recognize"
 const description3 = 
 `
     A web app with clarifai api to detect face on your photo with a point counter. React JS, Node JS, Express, postgreSQL.
 `
 
+const face_recognize = new Modal(github3, description3)
+
 // Events
-card.addEventListener('click', (event)=>openModal(event, github1, description1));
-card2.addEventListener('click', (event)=>openModal(event, github2, description2));
-card3.addEventListener('click', (event)=>openModal(event, github3, description3));
+//could pass github1 and description1 instead of the object but I find it more readable like that
+card.addEventListener('click', (event)=>openModal(event, book_friend.github, book_friend.description)); 
+card2.addEventListener('click', (event)=>openModal(event, weather_app.github, weather_app.description));
+card3.addEventListener('click', (event)=>openModal(event, face_recognize.github, face_recognize.description));
 closeBtn.addEventListener('click', closeModal);
 window.addEventListener('click', outsideClick);
 window.addEventListener('mousewheel', closeModal);
@@ -40,7 +55,7 @@ window.addEventListener('touchmove', closeModal);
 
 // Open
 function openModal(e, github, description) {
-    if(e.target.tagName == "DIV"){
+    if(e.target.tagName == "DIV" || e.target.tagName == "H3"){
         return null
     }
     e.preventDefault();
