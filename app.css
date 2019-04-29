@@ -117,7 +117,9 @@ h2, h3{
 	padding: 0.83em
 }
 
-
+#about a{
+	color:blue;
+}
 
 #skills ul{
 	display: flex;
