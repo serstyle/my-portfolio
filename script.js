@@ -47,7 +47,7 @@ const face_recognize = new Modal(github3, description3)
 //could pass github1 and description1 instead of the object but I find it more readable like that
 card.addEventListener('click', (event)=>openModal(event, book_friend.github, book_friend.description)); 
 card2.addEventListener('click', (event)=>openModal(event, weather_app.github, weather_app.description));
-card3.addEventListener('click', (event)=>openModal(event, face_recognize.github, face_recognize.description));
+// card3.addEventListener('click', (event)=>openModal(event, face_recognize.github, face_recognize.description));
 closeBtn.addEventListener('click', closeModal);
 window.addEventListener('click', outsideClick);
 window.addEventListener('mousewheel', closeModal);
