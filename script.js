@@ -35,10 +35,11 @@ The front end is deploy on netlify and the back end on heroku.
 
 const weather_app = new Modal(github2, description2)
 
-const github3 = "https://github.com/serstyle/face-recognize"
+const github3 = "https://github.com/serstyle/smart-brain-ts"
 const description3 = 
 `
-    A web app with clarifai api to detect face on your photo with a point counter. React JS, Node JS, Express, postgreSQL.
+It's a project from an online course I add typescript and change the design, with that course's project I learnt how to use React, Typescript, Docker, JWT.
+A web app with clarifai api to detect face on photo you publish with secure authentication (bcrypt and jwt) and profile. The front end is deploy on netlify and the back end on heroku.
 `
 
 const face_recognize = new Modal(github3, description3)
@@ -47,7 +48,7 @@ const face_recognize = new Modal(github3, description3)
 //could pass github1 and description1 instead of the object but I find it more readable like that
 card.addEventListener('click', (event)=>openModal(event, book_friend.github, book_friend.description)); 
 card2.addEventListener('click', (event)=>openModal(event, weather_app.github, weather_app.description));
-// card3.addEventListener('click', (event)=>openModal(event, face_recognize.github, face_recognize.description));
+card3.addEventListener('click', (event)=>openModal(event, face_recognize.github, face_recognize.description));
 closeBtn.addEventListener('click', closeModal);
 window.addEventListener('click', outsideClick);
 window.addEventListener('mousewheel', closeModal);
